@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <script src="developertools.js"></script>
+    <style>
+      @font-face {
+      font-family: Roboto-Thin;
+      src: url('../fonts/Roboto/Roboto-Thin.ttf');
+      }
+      @font-face {
+      font-family: Roboto-Regular;
+      src: url('../fonts/Roboto/Roboto-Regular.ttf');
+      }
+      ::-webkit-scrollbar {
+      width: 0px;  /* remove scrollbar space */
+      background: transparent;  /* make scrollbar invisible */
+      }
+      html{
+      width: 300px;
+      margin: -5px 0 5px 0;
+      }
+      body{
+      margin: 5px 0 5px 0;
+      }
+      .btn {
+      height: 30px;
+      width: 100%;
+      text-align: left;
+      border: none;
+      text-decoration: none;
+      display: inline-block;
+      margin: 0 0 0 0;
+      }
+      .header hr {
+      width: 100%;
+      margin: 0;
+      }
+      h5 {
+      font-family: Roboto-Regular;
+      text-align: center;
+      margin: 0 0 10px 0;
+      font-weight: 599;
+      }
+      a {
+      height: 30px;
+      width: 100%;
+      text-align: left;
+      border: none;
+      text-decoration: none;
+      display: inline-block;
+      margin: 0 0 0 0;
+      }
+      .btn-outline-secondary:focus, .btn-outline-secondary.focus {
+      box-shadow: 0 0 0 0 rgb(255, 255, 255);
+      }
+      .header{
+      padding: 10px 0 0 0;
+      margin: 0;
+      width: 100%;
+      position: fixed;
+      background-color: white;
+      }
+      .container{
+      padding: 55px 15px 0 15px;
+      border: 1px;
+      border-style: none;
+      border-radius: 0.2rem;
+      }
+      span {
+      float: right;
+      }
+      .back {
+      float: left;
+      padding-right: 5px;
+      }
+      hr {
+      width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h5>Developer Tools</h5>
+      <hr>
+    </div>
+    <div class="container">
+      <a href="chrome://inspect/#devices" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm" role="button"> Google Developer Page</a>
+      <a href="chrome://inspect/#devices" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm" role="button"> Devices</a>
+      <a href="chrome://inspect/#pages" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm" role="button"> Pages</a>
+      <a href="chrome://inspect/#extensions" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm" role="button"> Extensions</a>
+      <a href="chrome://inspect/#apps" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm" role="button"> Apps</a>
+      <a href="chrome://inspect/#workers" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm" role="button"> Shared Workers</a>
+      <a href="chrome://inspect/#service-workers" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm" role="button"> Service Workers</a>
+      <a href="chrome://inspect/#other" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm" role="button"> Other</a>
+      <a href="chrome://tracing/" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm" role="button"> Tracing</a>
+      <a href="chrome://user-actions/" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm" role="button"> User Actions</a>
+      <a href="advancedsettings.html" class="btn btn-outline-secondary btn-sm" role="button"><span class="back">&#9666;</span> Back</a>
+    </div>
+  </body>
+</html>

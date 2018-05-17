@@ -1,0 +1,17 @@
+Chrome Extention (1ClickSettings):
+	Apps
+	Extension Manager
+	History
+	Downloads
+	Bookmark Manager
+	Content Settings (Slider Per Option):
+		Cookies
+		Location
+		Notifications
+		JavaScript
+		Flash
+		Popups
+		Protected Content
+	Task Manager
+	Dinosaur
+	ADD Toggle Switch to Site Specific Settings

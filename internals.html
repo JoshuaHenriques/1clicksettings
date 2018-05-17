@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <script src="internals.js"></script>
+    <style>
+      @font-face {
+      font-family: Roboto-Thin;
+      src: url('../fonts/Roboto/Roboto-Thin.ttf');
+      }
+      @font-face {
+      font-family: Roboto-Regular;
+      src: url('../fonts/Roboto/Roboto-Regular.ttf');
+      }
+      ::-webkit-scrollbar {
+      width: 0px;  /* remove scrollbar space */
+      background: transparent;  /* make scrollbar invisible */
+      }
+      html{
+      width: 300px;
+      margin: -5px 0 5px 0;
+      }
+      body{
+      margin: 5px 0 5px 0;
+      }
+      .btn {
+      height: 30px;
+      width: 100%;
+      text-align: left;
+      border: none;
+      text-decoration: none;
+      display: inline-block;
+      margin: 0 0 0 0;
+      }
+      .header hr {
+      width: 100%;
+      margin: 0;
+      }
+      h5 {
+      font-family: Roboto-Regular;
+      text-align: center;
+      margin: 0 0 10px 0;
+      font-weight: 599;
+      }
+      a {
+      height: 30px;
+      width: 100%;
+      text-align: left;
+      border: none;
+      text-decoration: none;
+      display: inline-block;
+      margin: 0 0 0 0;
+      }
+      .btn-outline-secondary:focus, .btn-outline-secondary.focus {
+      box-shadow: 0 0 0 0 rgb(255, 255, 255);
+      }
+      .header{
+      padding: 10px 0 0 0;
+      margin: 0;
+      width: 100%;
+      position: fixed;
+      background-color: white;
+      }
+      .container{
+      padding: 55px 15px 0 15px;
+      border: 1px;
+      border-style: none;
+      border-radius: 0.2rem;
+      }
+      span {
+      float: right;
+      }
+      .back {
+      float: left;
+      padding-right: 5px;
+      }
+      hr {
+      width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h5>Internal Settings</h5>
+      <hr>
+    </div>
+    <div class="container">
+      <a href="chrome://accessibility/" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm" role="button"> Accessibility</a>
+      <a href="chrome://appcache-internals/" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm" role="button"> Application Cache</a>
+      <a href="chrome://blob-internals/" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm" role="button"> Blob Internals</a>
+      <a href="chrome://bluetooth-internals/#adapter" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm" role="button"> Bluetooth Internals</a>
+      <a href="chrome://gcm-internals/" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm" role="button"> GCM Internals</a>
+      <a href="chrome://indexeddb-internals/" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm" role="button"> IndexedDB</a>
+      <a href="chrome://media-internals/" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm" role="button"> Media Internals</a>
+      <a href="chrome://net-export/" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm" role="button"> Network Log Export</a>
+      <a href="chrome://net-internals/#events" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm" role="button"> Net Internals</a>
+      <a href="chrome://ntp-tiles-internals/" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm" role="button"> NTP Tiles</a>
+      <a href="chrome://password-manager-internals/" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm" role="button"> Password Manager</a>
+      <a href="chrome://quota-internals/" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm" role="button"> Quota Internals</a>
+      <a href="chrome://serviceworker-internals/" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm" role="button"> Serviceworker Internals</a>
+      <a href="chrome://signin-internals/" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm" role="button"> Signin Internals</a>
+      <a href="chrome://supervised-user-internals/" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm" role="button"> Supervised User</a>
+      <a href="chrome://sync-internals/" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm" role="button"> Sync Internals</a>
+      <a href="chrome://taskscheduler-internals/" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm" role="button"> Task Scheduler Internals</a>
+      <a href="chrome://translate-internals/" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm" role="button"> Translate Internals</a>
+      <a href="chrome://usb-internals/" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm" role="button"> USB Internals</a>
+      <a href="chrome://webrtc-internals/" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm" role="button"> WebRTC Internals</a>
+      <a href="advancedsettings.html" class="btn btn-outline-secondary btn-sm" role="button"><span class="back">&#9666;</span> Back</a>
+    </div>
+  </body>
+</html>

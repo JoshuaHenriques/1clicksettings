@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <script src="settings.js"></script>
+    <style>
+      @font-face {
+      font-family: Roboto-Thin;
+      src: url('../fonts/Roboto/Roboto-Thin.ttf');
+      }
+      @font-face {
+      font-family: Roboto-Regular;
+      src: url('../fonts/Roboto/Roboto-Regular.ttf');
+      }
+      ::-webkit-scrollbar {
+      width: 0px;  /* remove scrollbar space */
+      background: transparent;  /* make scrollbar invisible */
+      }
+      html{
+      width: 300px;
+      margin: -5px 0 5px 0;
+      }
+      body{
+      margin: 5px 0 5px 0;
+      }
+      .btn {
+      height: 30px;
+      width: 100%;
+      text-align: left;
+      border: none;
+      text-decoration: none;
+      display: inline-block;
+      margin: 0 0 0 0;
+      }
+      .header hr {
+      width: 100%;
+      margin: 0;
+      }
+      h5 {
+      font-family: Roboto-Regular;
+      text-align: center;
+      margin: 0 0 10px 0;
+      font-weight: 599;
+      }
+      a {
+      height: 30px;
+      width: 100%;
+      text-align: left;
+      border: none;
+      text-decoration: none;
+      display: inline-block;
+      margin: 0 0 0 0;
+      }
+      .btn-outline-secondary:focus, .btn-outline-secondary.focus {
+      box-shadow: 0 0 0 0 rgb(255, 255, 255);
+      }
+      .header{
+      padding: 10px 0 0 0;
+      margin: 0;
+      width: 100%;
+      position: fixed;
+      background-color: white;
+      }
+      .container{
+      padding: 55px 15px 0 15px;
+      border: 1px;
+      border-style: none;
+      border-radius: 0.2rem;
+      }
+      span {
+      float: right;
+      }
+      .back {
+      float: left;
+      padding-right: 5px;
+      }
+      hr {
+      width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h5>Settings</h5>
+      <hr>
+    </div>
+    <div class="container">
+      <a href="chrome://settings" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm"> Chrome Settings Page</a>
+      <a href="chrome://settings/manageProfile" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm"> Manage Profile</a>
+      <a href="chrome://settings/syncSetup" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm"> Sync Settings</a>
+      <a href="chrome://settings/importData" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm"> Import Bookmarks and Settings</a>
+      <a href="chrome://settings/fonts" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm"> Customize Fonts</a>
+      <a href="chrome://settings/searchEngines" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm"> Manage Search Engines</a>
+      <a href="content.html" class="btn btn-outline-secondary btn-sm"> Content Settings <span>&#9656;</span></a>
+      <a href="chrome://settings/autofill" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm"> Autofill Settings</a>
+      <a href="chrome://settings/passwords" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm"> Manage Passwords</a>
+      <a href="chrome://settings/cloudPrinters" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm"> Cloud Printers</a>
+      <a href="chrome://settings/resetProfileSettings" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm"> Reset Profile Settings</a>
+      <a href="advancedsettings.html" class="btn btn-outline-secondary btn-sm"> Advanced<span>&#9656;</span></a>
+      <a href="popup.html" class="btn btn-outline-secondary btn-sm" role="button"><span class="back">&#9666;</span> Back</a>
+    </div>
+  </body>
+</html>

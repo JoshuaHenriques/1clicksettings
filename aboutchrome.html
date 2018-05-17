@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <script src="aboutchrome.js"></script>
+    <style>
+      @font-face {
+      font-family: Roboto-Thin;
+      src: url('../fonts/Roboto/Roboto-Thin.ttf');
+      }
+      @font-face {
+      font-family: Roboto-Regular;
+      src: url('../fonts/Roboto/Roboto-Regular.ttf');
+      }
+      ::-webkit-scrollbar {
+      width: 0px;  /* remove scrollbar space */
+      background: transparent;  /* make scrollbar invisible */
+      }
+      html{
+      width: 300px;
+      margin: -5px 0 5px 0;
+      }
+      body{
+      margin: 5px 0 5px 0;
+      }
+      .btn {
+      height: 30px;
+      width: 100%;
+      text-align: left;
+      border: none;
+      text-decoration: none;
+      display: inline-block;
+      margin: 0 0 0 0;
+      }
+      .header hr {
+      width: 100%;
+      margin: 0;
+      }
+      h5 {
+      font-family: Roboto-Regular;
+      text-align: center;
+      margin: 0 0 10px 0;
+      font-weight: 599;
+      }
+      a {
+      height: 30px;
+      width: 100%;
+      text-align: left;
+      border: none;
+      text-decoration: none;
+      display: inline-block;
+      margin: 0 0 0 0;
+      }
+      .btn-outline-secondary:focus, .btn-outline-secondary.focus {
+      box-shadow: 0 0 0 0 rgb(255, 255, 255);
+      }
+      .header{
+      padding: 10px 0 0 0;
+      margin: 0;
+      width: 100%;
+      position: fixed;
+      background-color: white;
+      }
+      .container{
+      padding: 55px 15px 0 15px;
+      border: 1px;
+      border-style: none;
+      border-radius: 0.2rem;
+      }
+      span {
+      float: right;
+      }
+      .back {
+      float: left;
+      padding-right: 5px;
+      }
+      hr {
+      width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h5>About</h5>
+      <hr>
+    </div>
+    <div class="container">
+      <a href="chrome://settings/help" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm" role="button"> About Chrome</a>
+      <a href="chrome://components/" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm" role="button"> Components</a>
+      <a href="chrome://credits/" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm" role="button"> Credits</a>
+      <a href="chrome://devices/" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm" role="button"> Devices</a>
+      <a href="chrome://dns/" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm" role="button"> About DNS</a>
+      <a href="chrome://flash/" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm" role="button"> About Flash</a>
+      <a href="chrome://gpu/" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm" role="button"> GPU</a>
+      <a href="chrome://nacl/" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm" role="button"> Native Client</a>
+      <a href="chrome://system/" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm" role="button"> About System</a>
+      <a href="chrome://terms/" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm" role="button"> Terms of Service</a>
+      <a href="chrome://version/" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm" role="button"> Version</a>
+      <a href="chrome://chrome-urls/" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm" role="button"> All Chrome URLs</a>
+      <a href="popup.html" class="btn btn-outline-secondary btn-sm" role="button"><span class="back">&#9666;</span> Back</a>
+    </div>
+  </body>
+</html>

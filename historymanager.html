@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <script src="historymanager.js"></script>
+    <style>
+      @font-face {
+      font-family: Roboto-Thin;
+      src: url('../fonts/Roboto/Roboto-Thin.ttf');
+      }
+      @font-face {
+      font-family: Roboto-Regular;
+      src: url('../fonts/Roboto/Roboto-Regular.ttf');
+      }
+      ::-webkit-scrollbar {
+      width: 0px;  /* remove scrollbar space */
+      background: transparent;  /* make scrollbar invisible */
+      }
+      html{
+      width: 350px;
+      margin: -5px 0 5px 0;
+      }
+      body{
+      margin: 5px 0 5px 0;
+      }
+      .btn {
+      height: 30px;
+      text-align: left;
+      border: none;
+      text-decoration: none;
+      display: inline-block;
+      margin: 0 0 0 0;
+      }
+      .btn a {
+      width: 100%;
+      }
+      .dbtn {
+      height: 22px;
+      width: 22px;
+      border: none;
+      position: relative;
+      margin: 0;
+      display: inline-block;
+      font-weight: bold;
+      text-align: auto;
+      left: 50px;
+      vertical-align: auto;
+      cursor: pointer;
+      cursor: hand;
+      text-decoration: none;
+      display: inline-block;
+      padding: 0.25rem 0.5rem;
+      font-size: 0.875rem;
+      line-height: 1.5;
+      border-radius: 0.2rem;
+      transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+      color: #000000;
+      }
+      hr {
+      width: 100%;
+      }
+      h5 {
+      font-family: Roboto-Regular;
+      text-align: center;
+      margin: 0 0 10px 0;
+      font-weight: 599;
+      }
+      a {
+      height: 30px;
+      width: 100%;
+      text-align: left;
+      border: none;
+      text-decoration: none;
+      display: inline-block;
+      margin: 0 0 0 0;
+      }
+      .btn-outline-secondary:focus, .btn-outline-secondary.focus {
+      box-shadow: 0 0 0 0 rgb(255, 255, 255);
+      }
+      #searchInput {
+      text-align: center;
+      }
+      #search {
+      width: 85%;
+      font-size: 0.875rem;
+      }
+      .app {
+      width: 100%;
+      height: 30px;
+      margin: 0;
+      display: inline-block;
+      font-weight: 400;
+      text-align: left;
+      white-space: nowrap;
+      vertical-align: auto;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      text-decoration: none;
+      display: inline-block;
+      padding: 0.25rem 0.5rem;
+      font-size: 0.875rem;
+      line-height: 1.5;
+      border-radius: 0.2rem;
+      transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+      color: #6c757d;
+      background-color: transparent;
+      background-image: none;
+      border-color: #6c757d;
+      }
+      .app img {
+      vertical-align: top;
+      margin: 0;
+      padding: 0;
+      height: 22px;
+      width: 22px;
+      }
+      .app_title {
+      vertical-align: auto;
+      margin: 0;
+      margin-left: 5px;
+      }
+      .app:hover {
+      cursor:pointer;
+      color: #fff;
+      background-color: #6c757d;
+      border-color: #6c757d;
+      }
+      #appstore_link {
+      display: none;
+      }
+      .delete {
+      background-color: #eee;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 4px;
+      cursor: pointer;
+      cursor: hand;
+      font-family: Arial;
+      }
+      #historyDiv {
+      color: white;
+      font-size: 11px;
+      width: 350px;
+      height: 500px;
+      position: absolute;
+      overflow: scroll;
+      overflow-x: hidden;
+      }
+      .history {
+        float: left;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        word-wrap: break-word;
+        padding: 10px;
+        display:inline-block;
+        }
+
+        .title {
+        color: black;
+        float: left;
+        position: relative;
+        left: 15;
+        bottom: 15;
+        }
+
+        img {
+        float: left;
+        position: relative;
+        left: 5;
+        top: 2;
+        margin-right: 8px;
+        }
+
+
+        .imageDiv {
+        background-color: white;
+        width: 310px;
+        height: 20px;
+        position: relative;
+        right: 0;
+        overflow-y: hidden;
+        }
+
+        .removeButton {
+        position: relative;
+        right: 0;
+        bottom: 0;
+        height: 30px;
+        width: 50px;
+        border: none;
+        background-color: white;
+        }
+
+        .urlDiv {
+        position: relative;
+        right: 0;
+        top: -10;
+        height: 90px;
+        width: 300px;
+        overflow-y: hidden;
+        }
+
+        .removeCheck {
+        position: relative;
+        left: 230;
+        bottom: -15;
+        height: 30px;
+        }
+        .header{
+          padding: 10px 0 0 0;
+          margin: 0;
+          width: 100%;
+          position: fixed;
+          background-color: white;
+        }
+        .container{
+            padding: 55px 15px 0 15px;
+        }
+
+
+    </style>
+  </head>
+  <body>
+        <div class="header">
+    <h5>History Manager</h5>
+    <hr>
+    </div>
+    
+      <div id="searchInput">
+        <input id="search" type="text" placeholder=" Search" spellcheck="false">
+        <hr>
+      </div>
+
+      <a href="popup.html" class="btn btn-outline-secondary btn-sm" role="button">&xlarr; Back</a>
+      
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <input type="submit" class="btn btn-outline-secondary btn-sm" id="deleteSelected" value="Delete Selected">
+          </div>
+          <div class="col">
+            <input type="submit" class="btn btn-outline-secondary btn-sm" id="seeAll" value="See All">
+          </div>
+          <div class="col">
+            <input type="submit" class="btn btn-outline-secondary btn-sm" id="removeAll" value="Remove All">
+          </div>
+        </div>
+      </div>
+
+      <div id="historyDiv"></div>
+      <template id="historyTemplate">
+        <div class="history">
+          <div class="imageDiv">
+            <a class="titleLink"></a>
+          </div>
+          <div class="urlDiv">
+            <p class="pageName"></p>
+          </div>
+          <div class="removeDiv">
+            <a>
+              <button class="removeButton">Delete</button>
+              <input type="checkbox" class="removeCheck"/>
+            </a>
+          </div>
+        </div>
+      </template>
+
+    <script src="historymanager.js"></script>
+  </body>
+</html>

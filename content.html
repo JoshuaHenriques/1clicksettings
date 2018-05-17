@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <script src="content.js"></script>
+    <style>
+      @font-face {
+      font-family: Roboto-Thin;
+      src: url('../fonts/Roboto/Roboto-Thin.ttf');
+      }
+      @font-face {
+      font-family: Roboto-Regular;
+      src: url('../fonts/Roboto/Roboto-Regular.ttf');
+      }
+      ::-webkit-scrollbar {
+      width: 0px;  /* remove scrollbar space */
+      background: transparent;  /* make scrollbar invisible */
+      }
+      html{
+      width: 300px;
+      margin: -5px 0 5px 0;
+      }
+      body{
+      margin: 5px 0 5px 0;
+      }
+      .btn {
+      height: 30px;
+      width: 100%;
+      text-align: left;
+      border: none;
+      text-decoration: none;
+      display: inline-block;
+      margin: 0 0 0 0;
+      }
+      .header hr {
+      width: 100%;
+      margin: 0;
+      }
+      h5 {
+      font-family: Roboto-Regular;
+      text-align: center;
+      margin: 0 0 10px 0;
+      font-weight: 599;
+      }
+      a {
+      height: 30px;
+      width: 100%;
+      text-align: left;
+      border: none;
+      text-decoration: none;
+      display: inline-block;
+      margin: 0 0 0 0;
+      }
+      .btn-outline-secondary:focus, .btn-outline-secondary.focus {
+      box-shadow: 0 0 0 0 rgb(255, 255, 255);
+      }
+      .header{
+      padding: 10px 0 0 0;
+      margin: 0;
+      width: 100%;
+      position: fixed;
+      background-color: white;
+      }
+      .container{
+      padding: 55px 15px 0 15px;
+      border: 1px;
+      border-style: none;
+      border-radius: 0.2rem;
+      }
+      span {
+      float: right;
+      }
+      .back {
+      float: left;
+      padding-right: 5px;
+      }
+      hr {
+      width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h5>Content Settings</h5>
+      <hr>
+    </div>
+    <div class="container">
+      <a href="chrome://settings/content/cookies" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm"> Cookies</a>
+      <a href="chrome://settings/content/location" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm"> Location</a>
+      <a href="chrome://settings/content/camera" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm"> Camera</a>
+      <a href="chrome://settings/content/microphone" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm"> Microphone</a>
+      <a href="chrome://settings/content/notifications" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm"> Notifications</a>
+      <a href="chrome://settings/content/javascript" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm"> JavaScript</a>
+      <a href="chrome://settings/content/flash" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm"> Flash</a>
+      <a href="chrome://settings/content/images" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm"> Images</a>
+      <a href="chrome://settings/content/popups" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm"> Popups</a>
+      <a href="chrome://settings/content/ads" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm"> Ads</a>
+      <a href="chrome://settings/content/backgroundSync" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm"> Background Sync</a>
+      <a href="chrome://settings/content/sound" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm"> Sound</a>
+      <a href="chrome://settings/content/automaticDownloads" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm"> Automatic Downloads</a>
+      <a href="chrome://settings/content/unsandboxedPlugins" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm"> Unsandboxed Plugin Access</a>
+      <a href="chrome://settings/handlers" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm"> Handlers</a>
+      <a href="chrome://settings/content/midiDevices" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm"> MIDI Devices</a>
+      <a href="chrome://settings/content/zoomLevels" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm"> Zoom Levels</a>
+      <a href="chrome://settings/content/usbDevices" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm"> USB Devices</a>
+      <a href="chrome://settings/content/pdfDocuments" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm"> PDF Documents</a>
+      <a href="chrome://settings/content/protectedContent" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm"> Protected Content</a>
+      <a href="chrome://settings/content/clipboard" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm"> Clipboard</a>
+      <a href="settings.html" class="btn btn-outline-secondary btn-sm" role="button"><span class="back">&#9666;</span> Back</a>
+    </div>
+  </body>
+</html>

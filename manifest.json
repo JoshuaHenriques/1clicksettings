@@ -1,6 +1,6 @@
 {
   "name": "1ClickSettings",
-  "version": "1.01",
+  "version": "1.1",
   "description": "Easy Accessible Settings",
   "permissions": ["management", "downloads", "downloads.open", "downloads.shelf", "history"],
   "manifest_version": 2,

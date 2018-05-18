@@ -57,14 +57,14 @@
       .btn-outline-secondary:focus, .btn-outline-secondary.focus {
       box-shadow: 0 0 0 0 rgb(255, 255, 255);
       }
-      .header{
+      .header {
       padding: 10px 0 0 0;
       margin: 0;
       width: 100%;
       position: fixed;
       background-color: white;
       }
-      .container{
+      .container {
       padding: 55px 15px 0 15px;
       border: 1px;
       border-style: none;
@@ -81,33 +81,71 @@
       width: 100%;
       }
       .donate {
-        margin: 15px 0 0 0;
+      background-image: url("/images/btn_donate_SM.gif");
+      background-repeat: no-repeat;
+      position: relative;
+      height: 21px;
+      width: 74px;
+      }
+      p {
+      font-size: 13px;
+      text-align: center;
+      position: relative;
+      }
+      .add {
+      position: relative;
+      font-size: 11px;
+      text-align: center;
+      }
+      .col {
+        text-align: center;
+        margin: 0;
         padding: 0;
-        background-image: url("/images/btn_donate_SM.gif");
-        background-repeat: no-repeat;
       }
     </style>
   </head>
   <body>
     <div class="header">
-      <h5>Settings</h5>
+      <h5>Donations</h5>
       <hr>
     </div>
     <div class="container">
-      <a href="appmanager.html" class="btn btn-outline-secondary btn-sm" role="button"> App Manager <span>&#9656;</span></a>
-      <a href="extensionmanager.html" class="btn btn-outline-secondary btn-sm"> Extension Manager <span>&#9656;</span></a>
-      <a href="chrome://history" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm"> History</a>
-      <a href="chrome://bookmarks" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm"> Bookmarks</a>
-      <a href="chrome://downloads" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm"> Downloads</a>
-      <a href="settings.html" class="btn btn-outline-secondary btn-sm"> Settings <span>&#9656;</span></a>
-      <hr>
-      <a href="aboutchrome.html" class="btn btn-outline-secondary btn-sm"> About Chrome <span>&#9656;</span></a>
-      <a href="https://chrome.google.com/webstore/category/extensions" id="chrome" target="_blank" class="btn btn-outline-secondary btn-sm"> Chrome Web Store</a>
-      <a href="chrome://dino/" name="chrome" target="_blank" class="btn btn-outline-secondary btn-sm"> Dinosaur Game</a>
-      <a href="donate.html" class="btn btn-outline-secondary btn-sm"> Donate <span>&#9656;</span></a>
-      <!-- In Progress
-        <a href="" class="btn btn-outline-secondary btn-sm" role="button">Site Specific Settings &xrarr;</a> 
-        -->
+      <p>Any donations are greatly appreciated!</p>
+
+      <div class="row">
+        <div class="col"></div>
+        <div class="col">
+        <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=JFB3AKCJ745YN" class="donate" target="_blank" border="0"></a>
+        </div>
+        <div class="col"></div>
+      </div>
+
+      <div class="row">
+        <div class="col"></div>
+        <div class="col">
+        <p>ETH:<br><span class="add">0x5071C27f71134Fdd1c424c6131a9c9b0d8cac582</span></p>
+        </div>
+        <div class="col"></div>
+      </div>
+
+      <div class="row">
+        <div class="col"></div>
+        <div class="col">
+        <p>BTC:<br><span class="add">1HYP2tegqeeoKkbrkS9q25neDEEt7TL1wi</span></p>
+        </div>
+        <div class="col"></div>
+      </div>
+
+      <div class="row">
+        <div class="col"></div>
+        <div class="col">
+        <p>BCH:<br><span class="add">qz6hzny6lur7r8hrse6qg9chr4uhuv7l6gxc8nuf2l</span></p>
+        </div>
+        <div class="col"></div>
+      </div>
+
+      <hr style="margin: 12px 0 0 0">
+      <a href="popup.html" class="btn btn-outline-secondary btn-sm" role="button"><span class="back">&#9666;</span> Back</a>
     </div>
   </body>
 </html>

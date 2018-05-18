@@ -1,4 +1,4 @@
 # 1clicksettings
 Chrome Extension
-$ Screenshot
-![Alt text](relative/path/to/screenie.jpg?raw=true "Screenshot")
+# Screenshot
+![Alt text](images/screenie.png?raw=true "Screenshot")

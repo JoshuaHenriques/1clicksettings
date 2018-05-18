@@ -45,7 +45,7 @@ function $(id) {
     };
   
     div.onclick = function() {
-      if(flag == 0){launchApp(app.id);}
+      launchApp(app.id);
     };
   
     var img = document.createElement('img');
@@ -60,7 +60,7 @@ function $(id) {
     var deleteApp = document.createElement('button');
     deleteApp.className = 'dbtn';
     deleteApp.innerText = 'X';
-    deleteApp.title = 'Delete App';
+    deleteApp.title = 'Delete Extension';
     deleteApp.hidden = true;
     deleteApp.onclick = function() {
       chrome.management.uninstall(app.id);

@@ -44,9 +44,7 @@ function $(id) {
       deleteApp.hidden = true;
     };
   
-    div.onclick = function() {
-      launchApp(app.id);
-    };
+    
   
     var img = document.createElement('img');
     img.src = getIconURL(app);

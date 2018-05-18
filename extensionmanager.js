@@ -45,7 +45,7 @@ function $(id) {
     };
   
     div.onclick = function() {
-      if(flag == 0){launchApp(app.id);}
+      launchApp(app.id);
     };
   
     var img = document.createElement('img');
@@ -63,10 +63,7 @@ function $(id) {
     deleteApp.title = 'Delete App';
     deleteApp.hidden = true;
     deleteApp.onclick = function() {
-      flag = 1;
-      if(confirm('Are you sure you want to delete this app?')) {
-        alert('App Deleted');
-      };
+        chrome.management.uninstall(app.id);
     };
 
     div.appendChild(deleteApp);

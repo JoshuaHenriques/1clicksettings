@@ -2,7 +2,7 @@
   "name": "1ClickSettings",
   "version": "1.02",
   "description": "Easy Accessible Settings",
-  "permissions": ["management", "downloads", "downloads.open", "downloads.shelf", "history"],
+  "permissions": ["management"],
   "manifest_version": 2,
   "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'",
 

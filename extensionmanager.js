@@ -96,7 +96,8 @@ function $(id) {
     for (var i = 0; i < completeList.length; i++){
       var item = completeList[i];
       // Skip extensions and disabled apps.
-      if (!item.extensionType == 'extension' || !item.enabled || item.isApp) {
+      if (item.extensionType == 'theme') { continue; }
+      if (item.extensionType == 'theme' || !item.extensionType == 'extension' || !item.enabled || item.isApp) {
         continue;
       }
       if (filter && item.name.toLowerCase().search(filter) < 0) {

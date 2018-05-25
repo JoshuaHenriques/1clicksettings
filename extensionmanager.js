@@ -95,15 +95,15 @@ function $(id) {
     appList = [];
     for (var i = 0; i < completeList.length; i++){
       var item = completeList[i];
-      // Skip extensions and disabled apps.
-      if (item.extensionType == 'theme') { continue; }
-      if (item.extensionType == 'theme' || !item.extensionType == 'extension' || !item.enabled || item.isApp) {
+      //Skip extensions and disabled apps.
+      if (!item.enabled || item.isApp || item.type == ('theme')) {
         continue;
       }
       if (filter && item.name.toLowerCase().search(filter) < 0) {
         continue;
       }
       appList.push(item);
+      
     }
   }
   

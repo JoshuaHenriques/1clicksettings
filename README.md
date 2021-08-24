@@ -1,10 +1,23 @@
-# 1ClickSettings
-Easy Accessible Settings
+<p align="center">
+  <h3 align="center">1Click Settings</h3>
+  <p align="center">
+    Accessible Chrome Settings
+  </p>
+</p>
 
-An one-in-all settings extension that has the most used settings one click away!
+## About The Project
+One-in-all settings extension that has the most used settings one click away!
 
-Included is a custom app and extension manager as well with most Chrome settings.
+### Webstore
+[https://chrome.google.com/webstore/detail/1clicksettings/fecggmlinojicmegomodbdkidjnbdpff?hl=en-US&gl=CA]
 
-Webstore: https://chrome.google.com/webstore/detail/1clicksettings/fecggmlinojicmegomodbdkidjnbdpff?hl=en-US&gl=CA
-# Screenshot
+## License
+Distributed under the MIT License. See `LICENSE` for more information.
+
+## Contact
+[https://joshuahenriques.com](https://joshuahenriques.com)
+
+[https://github.com/joshuahenriques/1clicksettings](https://github.comjoshuahenriques/1clicksettings)
+
+## Screenshot
 ![Alt text](images/Screenie.png?raw=true "Screenshot")

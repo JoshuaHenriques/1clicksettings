@@ -9,7 +9,7 @@
 One-in-all settings extension that has the most used settings one click away!
 
 ### Webstore
-[https://chrome.google.com/webstore/detail/1clicksettings/fecggmlinojicmegomodbdkidjnbdpff?hl=en-US&gl=CA](Chrome Extension Store)
+[https://chrome.google.com/webstore/detail/1clicksettings/fecggmlinojicmegomodbdkidjnbdpff?hl=en-US&gl=CA](https://chrome.google.com/webstore/detail/1clicksettings/fecggmlinojicmegomodbdkidjnbdpff?hl=en-US&gl=CA)
 
 ## License
 Distributed under the MIT License. See `LICENSE` for more information.
